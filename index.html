@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolyo | Adınız</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">ADI</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#anasayfa">Anasayfa</a></li>
+      <li><a href="#hakkimda">Hakkımda</a></li>
+      <li><a href="#beceriler">Beceriler</a></li>
+      <li><a href="#projeler">Projeler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="anasayfa">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="dot"></span> Merhaba, ben</p>
+      <h1 class="hero-title">
+        <span class="hero-name">Adınız<br>Soyadınız</span>
+        <span class="hero-role typewriter" id="typewriter"></span>
+      </h1>
+      <p class="hero-desc">
+        Modern web teknolojileriyle yaratıcı ve kullanıcı odaklı dijital deneyimler inşa ediyorum.
+        Her satır kod, bir amaca hizmet eder.
+      </p>
+      <div class="hero-cta">
+        <a href="#projeler" class="btn btn-primary">Projelerime Bak</a>
+        <a href="#iletisim" class="btn btn-outline">İletişime Geç</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Yıl Deneyim</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Proje</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Teknoloji</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">portfolio.js</span>
+        </div>
+        <pre class="code-content"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">ad</span>: <span class="c-str">"Adınız Soyadınız"</span>,
+  <span class="c-key">konum</span>: <span class="c-str">"Türkiye"</span>,
+  <span class="c-key">roller</span>: [
+    <span class="c-str">"Frontend Dev"</span>,
+    <span class="c-str">"UI Designer"</span>,
+    <span class="c-str">"Problem Solver"</span>
+  ],
+  <span class="c-key">kahve</span>: <span class="c-keyword">true</span>,
+  <span class="c-fn">kod</span>: () <span class="c-keyword">=&gt;</span> {
+    <span class="c-keyword">return</span> <span class="c-str">"Harika şeyler!"</span>;
+  }
+};</code></pre>
+      </div>
+    </div>
+    <a href="#hakkimda" class="scroll-down" aria-label="Aşağı kaydır">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- HAKKIMDA -->
+  <section class="about" id="hakkimda">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">Hakkımda</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-img-placeholder">
+            <div class="img-ring"></div>
+            <div class="img-inner">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="18" fill="#6366f1" opacity="0.7"/>
+                <ellipse cx="40" cy="70" rx="28" ry="16" fill="#6366f1" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="experience-badge">
+              <span class="badge-num">3+</span>
+              <span class="badge-text">Yıl<br>Deneyim</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Tutkulu bir geliştirici ve tasarımcı.</h3>
+          <p>
+            Web geliştirme ve arayüz tasarımı konusunda güçlü bir altyapıya sahibim. 
+            Kullanıcı deneyimini ön planda tutarak, temiz ve sürdürülebilir kod yazıyorum.
+            Her projede teknik mükemmeliyeti estetikle buluşturmayı hedefliyorum.
+          </p>
+          <p>
+            Boş zamanlarımda açık kaynak projelere katkıda bulunuyor, yeni teknolojileri 
+            takip ediyor ve topluluk etkinliklerine katılıyorum.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <span>Türkiye</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">📧</span>
+              <span>email@ornek.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <span>Bilgisayar Mühendisliği</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">💼</span>
+              <span>Açık pozisyonlara bakıyorum</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>CV İndir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BECERİLER -->
+  <section class="skills" id="beceriler">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Beceriler</h2>
+      </div>
+
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title"><span class="cat-icon">🖥️</span> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="cat-icon">⚙️</span> Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">SQL / MongoDB</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">REST API</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="cat-icon">🛠️</span> Araçlar</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Figma</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Tags -->
+      <div class="tech-tags">
+        <span class="tag">React</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Git</span>
+        <span class="tag">Docker</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Figma</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">GraphQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJELER -->
+  <section class="projects" id="projeler">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projeler</h2>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobil">Mobil</button>
+        <button class="filter-btn" data-filter="tasarim">Tasarım</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder p1">
+              <div class="p-icon">🛒</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3 class="project-title">E-Ticaret Platformu</h3>
+            <p class="project-desc">
+              Tam yığın e-ticaret çözümü. Ürün yönetimi, sepet sistemi, 
+              ödeme entegrasyonu ve admin paneli içerir.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Canlıya Bak →</a>
+              <a href="#" class="link-arrow">Kaynak Kod →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder p2">
+              <div class="p-icon">📊</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">D3.js</span>
+            </div>
+            <h3 class="project-title">Veri Görselleştirme Paneli</h3>
+            <p class="project-desc">
+              Gerçek zamanlı veri görselleştirme ve analiz dashboardu.
+              İnteraktif grafikler ve filtreleme özellikleri.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Canlıya Bak →</a>
+              <a href="#" class="link-arrow">Kaynak Kod →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobil">
+          <div class="project-img">
+            <div class="project-placeholder p3">
+              <div class="p-icon">📱</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Görev Yönetim Uygulaması</h3>
+            <p class="project-desc">
+              Cross-platform mobil uygulama. Gerçek zamanlı senkronizasyon,
+              bildirimler ve takım işbirliği özellikleri.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">App Store →</a>
+              <a href="#" class="link-arrow">Kaynak Kod →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tasarim">
+          <div class="project-img">
+            <div class="project-placeholder p4">
+              <div class="p-icon">🎨</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">Figma</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">UI/UX</span>
+            </div>
+            <h3 class="project-title">Fintech Uygulama Tasarımı</h3>
+            <p class="project-desc">
+              Finansal yönetim uygulaması için kapsamlı UI/UX tasarımı.
+              Kullanıcı araştırması ve prototipleme dahil.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Figma'ya Bak →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder p5">
+              <div class="p-icon">🤖</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">OpenAI</span>
+              <span class="project-tag">FastAPI</span>
+            </div>
+            <h3 class="project-title">AI Sohbet Botu</h3>
+            <p class="project-desc">
+              GPT tabanlı akıllı müşteri destek botu. 
+              Çoklu dil desteği ve öğrenme kapasitesi.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Canlıya Bak →</a>
+              <a href="#" class="link-arrow">Kaynak Kod →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder p6">
+              <div class="p-icon">📝</div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Demo</a>
+              <a href="#" class="overlay-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">MDX</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <h3 class="project-title">Kişisel Blog Platformu</h3>
+            <p class="project-desc">
+              SSG ile çalışan hızlı blog. Markdown desteği, 
+              kategori filtreleme ve SEO optimizasyonu.
+            </p>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Canlıya Bak →</a>
+              <a href="#" class="link-arrow">Kaynak Kod →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DENEYİM -->
+  <section class="experience" id="deneyim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Deneyim</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Frontend Developer</h3>
+                <span class="company">Tech Startup A.Ş.</span>
+              </div>
+              <span class="timeline-date">2022 – Günümüz</span>
+            </div>
+            <ul class="timeline-list">
+              <li>React ve TypeScript ile ölçeklenebilir web uygulamaları geliştirdim.</li>
+              <li>%40 performans artışı sağlayan optimizasyonlar gerçekleştirdim.</li>
+              <li>5 kişilik frontend ekibine liderlik ettim.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Redux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Full Stack Developer</h3>
+                <span class="company">Dijital Ajans</span>
+              </div>
+              <span class="timeline-date">2020 – 2022</span>
+            </div>
+            <ul class="timeline-list">
+              <li>10'dan fazla müşteri projesi için tam yığın çözümler geliştirdim.</li>
+              <li>Node.js ve Express ile RESTful API'lar tasarladım.</li>
+              <li>MongoDB ve PostgreSQL veritabanı mimarisi kurdum.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Vue.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Frontend Developer Stajyeri</h3>
+                <span class="company">Yazılım Firması</span>
+              </div>
+              <span class="timeline-date">2019 – 2020</span>
+            </div>
+            <ul class="timeline-list">
+              <li>HTML, CSS ve JavaScript ile responsive arayüzler geliştirdim.</li>
+              <li>React'e geçiş sürecinde aktif rol üstlendim.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="contact" id="iletisim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">İletişim</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Birlikte çalışalım.</h3>
+          <p>
+            Yeni projelere, iş birliklerine ve ilginç fırsatlara her zaman açığım.
+            Bir fikriniz varsa, konuşalım!
+          </p>
+          <div class="contact-channels">
+            <a href="mailto:email@ornek.com" class="channel-item">
+              <span class="channel-icon">📧</span>
+              <div>
+                <span class="channel-label">E-posta</span>
+                <span class="channel-value">email@ornek.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="channel-item">
+              <span class="channel-icon">💼</span>
+              <div>
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/adiniz</span>
+              </div>
+            </a>
+            <a href="https://github.com" target="_blank" class="channel-item">
+              <span class="channel-icon">🐙</span>
+              <div>
+                <span class="channel-label">GitHub</span>
+                <span class="channel-value">github.com/adiniz</span>
+              </div>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="channel-item">
+              <span class="channel-icon">🐦</span>
+              <div>
+                <span class="channel-label">Twitter</span>
+                <span class="channel-value">@adiniz</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Adınız</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" placeholder="john@ornek.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Konu</label>
+            <input type="text" id="subject" placeholder="Proje hakkında konuşmak istiyorum" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea id="message" rows="5" placeholder="Merhaba, sizinle bir proje üzerinde çalışmak istiyorum..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Mesaj Gönder</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Mesajınız gönderildi! En kısa sürede dönüş yapacağım.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">ADI</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Adınız Soyadınız. Tüm hakları saklıdır.</p>
+        <p class="footer-made">❤️ ile kod yazıldı</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
